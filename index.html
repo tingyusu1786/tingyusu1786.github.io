@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ting-Yu's CV</title>
+    <link rel="stylesheet" href="cv.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var dot_color = "#6a6a68"
+      $(function(){
+        $(".dot").css("cursor", "pointer")
+        
+        $("#d-1").click(function(){
+          $("#p-1").fadeIn();
+          $("#p-2").fadeOut();
+          $("#p-3").fadeOut();
+          $("#d-1").css("background-color", dot_color)
+          $("#d-2").css("background-color", "white")
+          $("#d-3").css("background-color", "white")
+        })
+
+        $("#d-2").click(function(){
+          $("#p-1").fadeOut();
+          $("#p-2").fadeIn();
+          $("#p-3").fadeOut();
+          $("#d-1").css("background-color", "white");
+          $("#d-2").css("background-color", dot_color);
+          $("#d-3").css("background-color", "white");
+        })
+        
+        $("#d-3").click(function(){
+          $("#p-1").fadeOut();
+          $("#p-2").fadeOut();
+          $("#p-3").fadeIn();
+          $("#d-1").css("background-color", "white");
+          $("#d-2").css("background-color", "white");
+          $("#d-3").css("background-color", dot_color);
+      
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img id="p-1" src="me-1.jpg" width="220" height="300" alt="a picture of Ting-Yu smiling">
+        <img id="p-2" src="me-2.jpg" width="220" height="300" alt="a picture of Ting-Yu turning right">
+        <img id="p-3" src="me-3.jpg" width="220" height="300" alt="a picture of Ting-Yu looking at the camera">
+        <div class="dot" id="d-1"></div>
+        <div class="dot" id="d-2"></div>
+        <div class="dot" id="d-3"></div>
+      </div>
+      <div id="intro">
+        <h1>Ting-Yu Su</h1>
+        <h2>Sustainability specialist, a front-end engineer to-be.</h2>
+        <h3>Taipei, Taiwan</h3>
+        <h3>tingyusu1786@gmail.com</h3>
+        <h3>+886-911942022</h3>
+      </div>
+      <div id="about">
+        <h4><i class="fa-solid fa-face-grin-stars"></i> About Me</h4>
+        <p>Hello! I'm Ting-Yu Su.<br>This is my first ever web page created while learning Udemy online course <a class="course" href="https://www.udemy.com/course/learn-front-end-by-building-cv/">學習網頁開發：實作個人網頁履歷</a>.</p>
+        <p>Find me on:&nbsp
+          <a href="https://www.linkedin.com/in/tingyusu/?locale=zh_TW" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          &nbsp&&nbsp
+          <a href="https://www.facebook.com/utysu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </p>
+        <h4><i class="fa-solid fa-briefcase"></i> Experience</h4>
+        <p>
+          <ul>
+            <li><span class="title">BCSD Taiwan - specialist</span>
+              <ul>
+                <li>Compile international sustainability standards</li>
+                <li>Serve as the contact person with international organizations</li>
+                <li>Research on domestic and international sustainability trends</li>
+              </ul>
+            </li>
+            <li><span class="title">Pizza Has a Face - staff</span>
+              <ul>
+                <li>Provided super delicious hand-made pizza</li>
+                <li>Decorated the store with calligraphy arts</li>
+              </ul>
+            </li>
+            <li><span class="title">Japan Airlines - cabin crew</span>
+              <ul>
+                <li>Provided Skytrax-certified 5-star service and emergency preparation</li>
+                <li>Rewarded the JAL Award from Deputy of Cabin Service Apartment</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <h4><i class="fa-solid fa-graduation-cap"></i> Learning Experience</h4>
+        <p>
+          <ul>
+            <li>National Taiwan University</li>
+            <li>Taichung Municiple Girls' Senior High School</li>
+          </ul>
+        </p>
+      </div>
+      <div id="personality">
+        <h4>personality</h4>
+        <div class="block">
+          <div class="left-text">introvert</div>
+          <div class="right-text">extrovert</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar" id="g-1"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">sense</div>
+          <div class="right-text">sensibility</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar" id="g-2"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">pessimistic</div>
+          <div class="right-text">optimistic</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar" id="g-3"></div>
+      </div>
+      <div id="skills">
+        <h4>skills</h4>
+        <div class="block">
+          <div class="left-text">HTML</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar" id="g-2-1"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">CSS</div>
+          <div class="grey-bar"></div>
+          <div class="green-bar" id="g-2-2"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
