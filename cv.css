@@ -5,9 +5,14 @@ h2 {
   font-size: 20px;
 }
 
-.course {
+.link {
   color:#727272
 }
+
+.mail {
+  color: whitesmoke;
+}
+
 #card {
   width: 900px;
   height: 900px;
@@ -49,14 +54,14 @@ img {
   width: 12px;
   height: 12px;
   border-radius: 6px;
-  background-color: whitesmoke;
+  background-color: #777777;
   position: absolute;
   bottom: 10px;
 }
 
 #d-1 {
   left: 130px;
-  background-color: #6a6a68;
+  background-color: whitesmoke;
 }
 #d-2 {
   left: 150px;
@@ -150,19 +155,21 @@ h3 {
   position: relative;
   bottom: 0;
   left: 0;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .left-text {
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 0;
+  margin-top: -6px;
 }
 
 .right-text {
   position: absolute;
-  right: 35px;
+  right: 34px;
   top: 0;
+  margin-top: -6px;
 }
 
 .grey-bar {

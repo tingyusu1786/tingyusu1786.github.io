@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      var dot_color = "#6a6a68"
+      var dot_color = "whitesmoke"
+      var dot_color_default = "#777777"
       $(function(){
         $(".dot").css("cursor", "pointer")
         
@@ -21,25 +22,25 @@
           $("#p-2").fadeOut();
           $("#p-3").fadeOut();
           $("#d-1").css("background-color", dot_color)
-          $("#d-2").css("background-color", "white")
-          $("#d-3").css("background-color", "white")
+          $("#d-2").css("background-color", dot_color_default)
+          $("#d-3").css("background-color", dot_color_default)
         })
 
         $("#d-2").click(function(){
           $("#p-1").fadeOut();
           $("#p-2").fadeIn();
           $("#p-3").fadeOut();
-          $("#d-1").css("background-color", "white");
+          $("#d-1").css("background-color", dot_color_default);
           $("#d-2").css("background-color", dot_color);
-          $("#d-3").css("background-color", "white");
+          $("#d-3").css("background-color", dot_color_default);
         })
         
         $("#d-3").click(function(){
           $("#p-1").fadeOut();
           $("#p-2").fadeOut();
           $("#p-3").fadeIn();
-          $("#d-1").css("background-color", "white");
-          $("#d-2").css("background-color", "white");
+          $("#d-1").css("background-color", dot_color_default);
+          $("#d-2").css("background-color", dot_color_default);
           $("#d-3").css("background-color", dot_color);
       
         });
@@ -58,20 +59,20 @@
       </div>
       <div id="intro">
         <h1>Ting-Yu Su</h1>
-        <h2>Sustainability specialist, a front-end engineer to-be.</h2>
+        <h2>A front-end engineer-to-be.</h2>
         <h3>Taipei, Taiwan</h3>
-        <h3>tingyusu1786@gmail.com</h3>
+        <h3><a class="mail" href="mailto:tingyusu1786@gmail.com">tingyusu1786@gmail.com</a></h3>
         <h3>+886-911942022</h3>
       </div>
       <div id="about">
         <h4><i class="fa-solid fa-face-grin-stars"></i> About Me</h4>
-        <p>Hello! I'm Ting-Yu Su.<br>This is my first ever web page created while learning Udemy online course <a class="course" href="https://www.udemy.com/course/learn-front-end-by-building-cv/">學習網頁開發：實作個人網頁履歷</a>.</p>
-        <p>Find me on:&nbsp
+        <p>Hello! I'm Ting-Yu Su.<br>This is my first ever web page created while learning Udemy online course <a class="link" href="https://www.udemy.com/course/learn-front-end-by-building-cv/">學習網頁開發：實作個人網頁履歷</a>.</p>
+        <p>Find me on&nbsp
           <a href="https://www.linkedin.com/in/tingyusu/?locale=zh_TW" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           &nbsp&&nbsp
           <a href="https://www.facebook.com/utysu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </p>
-        <h4><i class="fa-solid fa-briefcase"></i> Experience</h4>
+        <h4><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
         <p>
           <ul>
             <li><span class="title">BCSD Taiwan - specialist</span>
@@ -90,12 +91,12 @@
             <li><span class="title">Japan Airlines - cabin crew</span>
               <ul>
                 <li>Provided Skytrax-certified 5-star service and emergency preparation</li>
-                <li>Rewarded the JAL Award from Deputy of Cabin Service Apartment</li>
+                <li>Rewarded with the JAL Award from Deputy of Cabin Service Apartment</li>
               </ul>
             </li>
           </ul>
         </p>
-        <h4><i class="fa-solid fa-graduation-cap"></i> Learning Experience</h4>
+        <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
         <p>
           <ul>
             <li>National Taiwan University</li>
@@ -104,7 +105,7 @@
         </p>
       </div>
       <div id="personality">
-        <h4>personality</h4>
+        <h4>Personality</h4>
         <div class="block">
           <div class="left-text">introvert</div>
           <div class="right-text">extrovert</div>
@@ -124,7 +125,7 @@
           <div class="green-bar" id="g-3"></div>
       </div>
       <div id="skills">
-        <h4>skills</h4>
+        <h4>Skills</h4>
         <div class="block">
           <div class="left-text">HTML</div>
           <div class="grey-bar"></div>
